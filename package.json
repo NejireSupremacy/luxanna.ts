@@ -2,20 +2,26 @@
   "name": "luxanna.ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc ; node --no-warnings ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@biscuitland/cache": "^1.1.0",
-    "@biscuitland/core": "^1.1.0",
+    "dotenv": "^16.0.1",
     "shieldbow": "^1.3.0",
     "tslog": "^3.3.3"
   },
   "devDependencies": {
-    "@types/node": "^18.6.3"
+    "@types/node": "^18.6.3",
+    "typescript": "^4.7.4"
   }
 }
