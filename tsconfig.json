@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["**/node_modules", "**/dist"],
+  "include": ["src/**/*"]
+}
