@@ -1,8 +1,8 @@
 import { ChatInputApplicationCommandBuilder } from '@biscuitland/core';
 import { Command } from '../../interfaces/Command';
 import { codeString } from '../../utils/functions';
-import { Region, ApiError } from 'shieldbow';
 import { regions } from '../../utils/regions';
+import { Region, ApiError } from 'shieldbow';
 
 export const command: Command = {
   data: new ChatInputApplicationCommandBuilder()
