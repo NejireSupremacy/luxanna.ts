@@ -40,7 +40,7 @@ export class Collection<K, V> extends Map<K, V> {
     }
 
     filter(fn: (value: V, key: K, structCache: this) => boolean): Collection<K, V> {
-        const result = new Collection<K, V>;
+        const result = new Collection<K, V>();
 
         for (const [key, value] of this.entries()) {
             if (fn(value, key, this)) { result.set(key, value); }
