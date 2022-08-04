@@ -1,7 +1,8 @@
 import { Interaction, MessageFlags } from '@biscuitland/core';
 import { InteractionResponseTypes } from '@biscuitland/api-types';
 import { Event } from '../interfaces/Event';
-const ms = require('@fabricio-191/ms');
+
+const ms = require('ms');
 
 export const event: Event = {
   name: 'interactionCreate',
@@ -30,11 +31,7 @@ export const event: Event = {
             data: {
               content: `Command is still on cooldown. Try again in \`${ms(
                 client.cooldowns.get(id)[command.data.name].executedAt -
-                  Date.now(),
-                {
-                  long: false,
-                  language: 'es'
-                }
+                  Date.now()
               )}\`.`,
               flags: MessageFlags.Ephemeral
             },
